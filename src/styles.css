@@ -1,3 +1,32 @@
+/* box styles */
+
+/* body {
+  background: #d49bf4;
+} */
+
+.container {
+  background-color: rgb(223, 241, 252);
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+#city-input {
+  padding: 10px 0;
+}
+
+#five-days div.col {
+  border: 1px solid black;
+}
+
+/* font styles */
+
 h1 {
-  color: #f78e1e;
+  color: #030f33;
+}
+
+input[type="text"] {
+  width: 100%;
+  border-radius: 5px;
 }
