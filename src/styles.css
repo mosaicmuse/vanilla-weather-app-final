@@ -16,8 +16,12 @@
   padding: 10px 0 0 0;
 }
 
-#five-days div.col {
-  border: 1px solid black;
+.five-days .col {
+  border-right: 1px solid black;
+}
+
+.five-days .col:last-of-type {
+  border: none;
 }
 
 .main-info {
@@ -52,4 +56,8 @@ h3 {
 input[type="text"] {
   width: 100%;
   border-radius: 5px;
+}
+
+.five-days span {
+  font-size: 0.8em;
 }
