@@ -13,17 +13,40 @@
 }
 
 #city-input {
-  padding: 10px 0;
+  padding: 10px 0 0 0;
 }
 
 #five-days div.col {
   border: 1px solid black;
 }
 
+.main-info {
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+
 /* font styles */
 
 h1 {
   color: #030f33;
+}
+
+.city-name {
+  padding: 0;
+  margin: 0;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 10px;
+}
+
+.main-info p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 input[type="text"] {
