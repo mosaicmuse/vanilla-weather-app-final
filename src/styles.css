@@ -1,8 +1,15 @@
-/* box styles */
+/* #####################
+BOX STYLES
+##################### */
 
 /* body {
   background: #d49bf4;
 } */
+
+.outer {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
 .wrapper {
   background-color: rgb(223, 241, 252);
@@ -29,7 +36,9 @@
   margin: 0;
 }
 
-/* font styles */
+/* #####################
+FONT STYLES
+##################### */
 
 h1 {
   color: #030f33;
