@@ -2,10 +2,6 @@
 BOX STYLES
 ##################### */
 
-/* body {
-  background: #d49bf4;
-} */
-
 .outer {
   max-width: 600px;
   margin: 0 auto;
@@ -17,10 +13,12 @@ BOX STYLES
   padding: 20px;
   max-width: 600px;
   border-radius: 10px;
+  box-shadow: 10px 10px 10px rgb(134, 134, 134);
 }
 
-#city-input {
-  padding: 10px 0 0 0;
+.middle {
+  text-align: center;
+  justify-content: center;
 }
 
 .five-days .col {
@@ -31,9 +29,22 @@ BOX STYLES
   border: none;
 }
 
-.main-info {
+.main {
   padding: 0 0 20px 0;
   margin: 0;
+}
+
+/* #####################
+IMAGE STYLES
+##################### */
+
+img {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  vertical-align: top;
+  margin-top: -30px;
 }
 
 /* #####################
@@ -42,6 +53,7 @@ FONT STYLES
 
 h1 {
   color: #030f33;
+  padding-bottom: 10px;
 }
 
 .city-name {
@@ -55,16 +67,34 @@ h3 {
   font-size: 10px;
 }
 
-.main-info p {
+form p {
+  font-size: 0.8em;
+  font-style: italic;
+  padding-left: 3px;
+}
+
+.main-info {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.main-details {
   margin: 0;
   padding: 0;
   font-weight: bold;
   font-size: 1.1em;
 }
 
+.conditions::first-letter {
+  text-transform: capitalize;
+}
+
 input[type="text"] {
   width: 100%;
   border-radius: 5px;
+  font-size: 1.1em;
 }
 
 .five-days span {
@@ -79,4 +109,9 @@ input[type="text"] {
 
 .active:hover {
   color: black;
+}
+
+#conditions {
+  font-size: 1.5em;
+  line-height: 30px;
 }

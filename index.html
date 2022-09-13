@@ -34,30 +34,36 @@
                 <p>Input a city to see the weather</p>
               </div>
               <div class="col-2">
-                <input type="submit" value="GO" />
+                <input type="submit" value="GO" class="btn btn-dark btn-sm" />
               </div>
             </div>
           </form>
           <!--end row-->
           <!--start row-->
-          <div class="row main-info">
+          <div class="row main">
             <div class="col">
               <h2 id="city" class="city-name">New York</h2>
-              <p id="date" class="main-info">9/12/22</p>
+              <p class="main-info">
+                <span id="temperature">25</span>°
+                <a href="#" id="f-deg-link" class="active">F</a> |
+                <a href="#" id="c-deg-link">C</a>
+              </p>
+              <p id="date" class="main-details"></p>
             </div>
-            <div class="col">
+            <div class="col middle">
               <img
                 id="icon"
                 src="https://openweathermap.org/img/wn/01d@2x.png"
               />
             </div>
             <div class="col">
-              <p class="main-info">
-                <span id="temperature">25</span>°
-                <a href="#" id="f-deg-link" class="active">F</a> |
-                <a href="#" id="c-deg-link">C</a>
+              <p id="conditions" class="main-details conditions"></p>
+              <p class="main-details conditions">
+                Wind: <span id="wind"></span> km/h
               </p>
-              <p id="conditions" class="main-info">Partly cloudy</p>
+              <p class="main-details conditions">
+                Humidity: <span id="humidity"></span>%
+              </p>
             </div>
           </div>
           <!--end row-->

@@ -29,6 +29,8 @@ function displayWeather(response) {
   let conditionsElement = document.querySelector("#conditions");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+  let windElement = document.querySelector("#wind");
+  let humidityElement = document.querySelector("#humidity");
   fTemp = response.data.main.temp;
   temperatureElement.innerHTML = Math.round(fTemp);
   cityElement.innerHTML = response.data.name;
@@ -39,6 +41,8 @@ function displayWeather(response) {
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  humidityElement.innerHTML = Math.round(response.data.main.humidity);
 }
 
 function search(city) {
@@ -81,4 +85,4 @@ cDegLink.addEventListener("click", showCelsius);
 let fDegLink = document.querySelector("#f-deg-link");
 fDegLink.addEventListener("click", showFahrenheit);
 
-search("New York");
+search("Seattle");
