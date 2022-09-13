@@ -70,3 +70,13 @@ input[type="text"] {
 .five-days span {
   font-size: 0.8em;
 }
+
+.active {
+  color: black;
+  text-decoration: none;
+  cursor: auto;
+}
+
+.active:hover {
+  color: black;
+}
