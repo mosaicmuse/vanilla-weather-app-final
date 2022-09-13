@@ -9,8 +9,8 @@ BOX STYLES
 
 .wrapper {
   background-color: rgb(223, 241, 252);
-  margin: 20px auto;
-  padding: 20px;
+  margin: 20px auto 15px auto;
+  padding: 30px;
   max-width: 600px;
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgb(134, 134, 134);
@@ -32,6 +32,10 @@ BOX STYLES
 .main {
   padding: 0 0 20px 0;
   margin: 0;
+}
+
+#bottom-text {
+  padding-left: 20px;
 }
 
 /* #####################
