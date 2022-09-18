@@ -8,12 +8,18 @@ BOX STYLES
 }
 
 .wrapper {
-  background-color: rgb(223, 241, 252);
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(223, 241, 252, 0.5),
+    rgb(193, 230, 254),
+    rgba(223, 241, 252, 0.5)
+  );
   margin: 20px auto 15px auto;
   padding: 30px;
   max-width: 600px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 10px 10px 10px rgb(134, 134, 134);
+  border: 6px solid rgb(1, 64, 105);
 }
 
 .middle {
@@ -21,11 +27,11 @@ BOX STYLES
   justify-content: center;
 }
 
-.weather-forecast .col {
-  border-right: 1px solid black;
+.weather-forecast .col-2 {
+  border-right: 1px solid rgb(1, 64, 105);
 }
 
-.weather-forecast .col:last-of-type {
+.weather-forecast .col-2:last-of-type {
   border: none;
 }
 
@@ -36,6 +42,14 @@ BOX STYLES
 
 #bottom-text {
   padding-left: 20px;
+}
+
+.button {
+  background-color: rgb(1, 64, 105);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 10px;
 }
 
 /* #####################
@@ -52,6 +66,7 @@ img {
 
 #icon {
   margin-top: -30px;
+  margin-left: -20px;
 }
 
 /* #####################
@@ -59,8 +74,12 @@ FONT STYLES
 ##################### */
 
 h1 {
-  color: #030f33;
+  color: rgb(1, 64, 105);
   padding-bottom: 10px;
+}
+
+#bottom-text a {
+  color: rgb(1, 64, 105);
 }
 
 .city-name {
@@ -68,10 +87,6 @@ h1 {
   margin: 0;
   font-size: 1.7em;
   font-weight: bold;
-}
-
-h3 {
-  font-size: 10px;
 }
 
 form p {
@@ -94,8 +109,16 @@ form p {
   font-size: 1.1em;
 }
 
+.category {
+  font-weight: normal;
+}
+
 .conditions::first-letter {
   text-transform: capitalize;
+}
+
+.weather-forecast {
+  text-align: center;
 }
 
 input[type="text"] {

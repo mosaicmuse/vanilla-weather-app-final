@@ -51,7 +51,7 @@ function displayForecast(response) {
               <div class="forecast-temp">
                 <span class="high">${Math.round(
                   forecastDay.temp.max
-                )}°</span> <span class="low">${Math.round(
+                )}°</span> | <span class="low">${Math.round(
           forecastDay.temp.min
         )}°</span>
               </div>
@@ -104,32 +104,32 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-function showCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  fDegLink.classList.remove("active");
-  cDegLink.classList.add("active");
-  let cTemp = ((fTemp - 32) * 5) / 9;
-  temperatureElement.innerHTML = Math.round(cTemp);
-}
+// function showCelsius(event) {
+//   event.preventDefault();
+//   let temperatureElement = document.querySelector("#temperature");
+//   fDegLink.classList.remove("active");
+//   cDegLink.classList.add("active");
+//   let cTemp = ((fTemp - 32) * 5) / 9;
+//   temperatureElement.innerHTML = Math.round(cTemp);
+// }
 
-function showFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  cDegLink.classList.remove("active");
-  fDegLink.classList.add("active");
-  temperatureElement.innerHTML = Math.round(fTemp);
-}
+// function showFahrenheit(event) {
+//   event.preventDefault();
+//   let temperatureElement = document.querySelector("#temperature");
+//   cDegLink.classList.remove("active");
+//   fDegLink.classList.add("active");
+//   temperatureElement.innerHTML = Math.round(fTemp);
+// }
 
-let fTemp = null;
+// let fTemp = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-let cDegLink = document.querySelector("#c-deg-link");
-cDegLink.addEventListener("click", showCelsius);
+// let cDegLink = document.querySelector("#c-deg-link");
+// cDegLink.addEventListener("click", showCelsius);
 
-let fDegLink = document.querySelector("#f-deg-link");
-fDegLink.addEventListener("click", showFahrenheit);
+// let fDegLink = document.querySelector("#f-deg-link");
+// fDegLink.addEventListener("click", showFahrenheit);
 
 search("Seattle");

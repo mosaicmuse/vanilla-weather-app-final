@@ -34,7 +34,7 @@
                 <p>Input a city to see the weather</p>
               </div>
               <div class="col-2">
-                <input type="submit" value="GO" class="btn btn-dark btn-sm" />
+                <input type="submit" value="GO" class="button" />
               </div>
             </div>
           </form>
@@ -42,12 +42,8 @@
           <!--start row-->
           <div class="row main">
             <div class="col">
-              <h2 id="city" class="city-name">New York</h2>
-              <p class="main-info">
-                <span id="temperature">25</span>°
-                <a href="#" id="f-deg-link" class="active">F</a> |
-                <a href="#" id="c-deg-link">C</a>
-              </p>
+              <h2 id="city" class="city-name">Seattle</h2>
+              <p class="main-info"><span id="temperature">60</span>° F</p>
               <p id="date" class="main-details"></p>
             </div>
             <div class="col middle">
@@ -59,10 +55,11 @@
             <div class="col">
               <p id="conditions" class="main-details conditions"></p>
               <p class="main-details conditions">
-                Wind: <span id="wind"></span> km/h
+                <span class="category">Wind:</span> <span id="wind"></span> mph
               </p>
               <p class="main-details conditions">
-                Humidity: <span id="humidity"></span>%
+                <span class="category">Humidity:</span>
+                <span id="humidity"></span>%
               </p>
             </div>
           </div>
