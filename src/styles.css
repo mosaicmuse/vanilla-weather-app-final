@@ -27,6 +27,10 @@ BOX STYLES
   justify-content: center;
 }
 
+.right {
+  margin-left: -30px;
+}
+
 .weather-forecast .col-2 {
   border-right: 1px solid rgb(1, 64, 105);
 }
@@ -66,7 +70,8 @@ img {
 
 #icon {
   margin-top: -30px;
-  margin-left: -20px;
+  margin-left: -70px;
+  z-index: -10;
 }
 
 /* #####################
