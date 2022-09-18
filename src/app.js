@@ -41,7 +41,7 @@ function displayForecast(response) {
         forecastHTML +
         `<div class="col-2">
               ${formatDay(forecastDay.dt)}<br />
-              ${index}
+            
               <img
                 id="icon-2"
                 src="https://openweathermap.org/img/wn/${
@@ -63,15 +63,12 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "8d9838178b5b401f1b4e7cb5af18e210";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
 
 function displayWeather(response) {
-  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let conditionsElement = document.querySelector("#conditions");
