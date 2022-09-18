@@ -21,11 +21,11 @@ BOX STYLES
   justify-content: center;
 }
 
-.five-days .col {
+.weather-forecast .col {
   border-right: 1px solid black;
 }
 
-.five-days .col:last-of-type {
+.weather-forecast .col:last-of-type {
   border: none;
 }
 
@@ -44,10 +44,13 @@ IMAGE STYLES
 
 img {
   display: inline-block;
-  text-align: center;
+  text-align: left;
   margin: 0;
   width: 100%;
   vertical-align: top;
+}
+
+#icon {
   margin-top: -30px;
 }
 
@@ -101,8 +104,12 @@ input[type="text"] {
   font-size: 1.1em;
 }
 
-.five-days span {
+.forecast-temp {
   font-size: 0.8em;
+}
+
+.high {
+  font-weight: bold;
 }
 
 .active {
