@@ -22,6 +22,27 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Mon.", "Tue.", "Wed.", "Thu.", "Fri.", "Sat."];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+              ${day}<br /><img
+                id="icon-2"
+                src="https://openweathermap.org/img/wn/01d@2x.png"
+              />
+              <div class="forecast-temp">
+                <span class="high">30°</span> <span class="low">30°</span>
+              </div>
+              </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayWeather(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
@@ -31,6 +52,7 @@ function displayWeather(response) {
   let iconElement = document.querySelector("#icon");
   let windElement = document.querySelector("#wind");
   let humidityElement = document.querySelector("#humidity");
+
   fTemp = response.data.main.temp;
   temperatureElement.innerHTML = Math.round(fTemp);
   cityElement.innerHTML = response.data.name;
@@ -86,3 +108,4 @@ let fDegLink = document.querySelector("#f-deg-link");
 fDegLink.addEventListener("click", showFahrenheit);
 
 search("Seattle");
+displayForecast();
